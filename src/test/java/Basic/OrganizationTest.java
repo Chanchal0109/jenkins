@@ -8,19 +8,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import commonutils.PropertyFileUtil;
-import commonutils.WebDriverUtil;
+
 
 public class OrganizationTest {
 
-	
-
-	
-		//PropertyFileUtil pu = new PropertyFileUtil();
-		
-		//WebDriverUtil wu = new WebDriverUtil();
-		
-		
 		@Test
 		public void organizationTest() throws IOException, InterruptedException {
 			
@@ -32,15 +23,9 @@ public class OrganizationTest {
 			d.findElement(By.name("user_password")).sendKeys("admin");
 			d.findElement(By.id("submitButton")).click();
 			
-//			WebDriver d = new ChromeDriver();
-//			wu.maximize(d);
-//			d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//			//TO READ THE DATA FROM PROPERTY FILE
-//			String url = pu.getDataFromProertyfile("Url");
-//			String username = pu.getDataFromProertyfile("Username");
-//			String pass = pu.getDataFromProertyfile("Password");
+//		
 //			
 		
 	}
 }
-}
+
